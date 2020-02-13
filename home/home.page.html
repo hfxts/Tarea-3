@@ -1,0 +1,19 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>
+      Fake Tumblr
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let imagen of imagenes">
+        <img class = "galeria" src="{{imagen}}" alt="" srcset="" (click)="verImagen(imagen)">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
